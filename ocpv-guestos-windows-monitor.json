@@ -38,7 +38,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -852,7 +852,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -867,7 +867,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -882,7 +882,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -897,7 +897,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -912,7 +912,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -927,7 +927,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -942,7 +942,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -957,7 +957,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -972,7 +972,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -987,7 +987,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -1002,7 +1002,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -1027,7 +1027,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1110,7 +1110,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "100 - (avg by (instance) (irate(windows_cpu_time_total{job=~\"$job\",mode=\"idle\"}[2m])) * 100)",
@@ -1125,7 +1125,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1208,7 +1208,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "100.0 - 100 * windows_memory_physical_free_bytes{job=~\"$job\"} / windows_memory_physical_total_bytes{job=~\"$job\"}",
@@ -1223,7 +1223,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1309,7 +1309,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "max by (instance) (irate(windows_net_bytes_sent_total{job=~\"$job\",nic!~'isatap.*|VPN.*'}[2m]))*8",
@@ -1321,7 +1321,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -1340,7 +1340,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1423,7 +1423,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "-max by (instance) (irate(windows_logical_disk_read_bytes_total[2m]))",
@@ -1434,7 +1434,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "max by (instance) (irate(windows_logical_disk_write_bytes_total[2m]))",
@@ -1451,7 +1451,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1534,7 +1534,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "-max by (instance) (irate(windows_logical_disk_reads_total[2m]))",
@@ -1545,7 +1545,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "max by (instance) (irate(windows_logical_disk_writes_total[2m]))",
@@ -1575,7 +1575,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1629,7 +1629,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "time() - windows_system_boot_time_timestamp{job=~\"$job\",instance=~\"$instance\"}",
@@ -1644,7 +1644,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1706,7 +1706,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "100 - (avg(irate(windows_cpu_time_total{job=~\"$job\",instance=~\"$instance\",mode=\"idle\"}[2m])))*100",
@@ -1721,7 +1721,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1795,7 +1795,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "100 - (\n  windows_logical_disk_free_bytes{job=~\"$job\",instance=~\"$instance\",volume!~\"HarddiskVolume.*\"} \n  / \n  windows_logical_disk_size_bytes{job=~\"$job\",instance=~\"$instance\",volume!~\"HarddiskVolume.*\"}\n) * 100",
@@ -1810,7 +1810,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1911,7 +1911,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "sum(windows_service_state{job=~\"$job\",instance=~\"$instance\"}) by (state)",
@@ -1926,7 +1926,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2026,7 +2026,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "windows_system_processes{job=~\"$job\",instance=~\"$instance\"}",
@@ -2041,7 +2041,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2095,7 +2095,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "windows_cpu_logical_processor{job=~\"$job\",instance=~\"$instance\"}",
@@ -2110,7 +2110,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2171,7 +2171,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "100 - (windows_memory_physical_free_bytes{job=~\"$job\",instance=~\"$instance\"} / windows_memory_physical_total_bytes{job=~\"$job\",instance=~\"$instance\"})*100",
@@ -2186,7 +2186,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2241,7 +2241,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "windows_memory_physical_total_bytes{job=~\"$job\",instance=~\"$instance\"}",
@@ -2256,7 +2256,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2344,7 +2344,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "100 - avg(irate(windows_cpu_time_total{job=~\"$job\",instance=~\"$instance\",mode=\"idle\"}[5m]))*100",
@@ -2359,7 +2359,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2520,7 +2520,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "windows_memory_physical_total_bytes{job=~\"$job\",instance=~\"$instance\"}",
@@ -2533,7 +2533,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "windows_memory_physical_free_bytes{job=~\"$job\",instance=~\"$instance\"}",
@@ -2546,7 +2546,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "windows_memory_commit_limit{job=~\"$job\",instance=~\"$instance\"}",
@@ -2557,7 +2557,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "windows_memory_committed_bytes{job=~\"$job\",instance=~\"$instance\"}",
@@ -2574,7 +2574,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2678,7 +2678,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "windows_logical_disk_free_bytes{job=~\"$job\",instance=~\"$instance\",volume!~\"HarddiskVolume.*\"}",
@@ -2689,7 +2689,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "windows_logical_disk_size_bytes{job=~\"$job\",instance=~\"$instance\",volume!~\"HarddiskVolume.*\"}",
@@ -2706,7 +2706,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2794,7 +2794,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "irate(windows_net_bytes_received_total{job=~\"$job\",instance=~\"$instance\",nic!~'isatap.*|VPN.*'}[5m])*8",
@@ -2805,7 +2805,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "irate(windows_net_bytes_sent_total{job=~\"$job\",instance=~\"$instance\",nic!~'isatap.*|VPN.*'}[5m])*8 > 0",
@@ -2822,7 +2822,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -2910,7 +2910,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "irate(windows_logical_disk_read_bytes_total{job=~\"$job\",instance=~\"$instance\",volume!~\"HarddiskVolume.*\"}[5m])",
@@ -2921,7 +2921,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "irate(windows_logical_disk_write_bytes_total{job=~\"$job\",instance=~\"$instance\",volume!~\"HarddiskVolume.*\"}[5m])",
@@ -2938,7 +2938,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -3026,7 +3026,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "irate(windows_logical_disk_reads_total{job=~\"$job\",instance=~\"$instance\",volume!~\"HarddiskVolume.*\"}[5m])",
@@ -3037,7 +3037,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "irate(windows_logical_disk_writes_total{job=~\"$job\",instance=~\"$instance\",volume!~\"HarddiskVolume.*\"}[5m])",
@@ -3054,7 +3054,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -3137,7 +3137,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "(sum by(instance,nic)(irate(windows_net_bytes_total{job=~\"$job\",instance=~\"$instance\",nic!~'isatap.*|VPN.*'}[5m])*8)/on(instance,nic)group_left()(windows_net_current_bandwidth_bytes{job=~\"$job\",instance=~\"$instance\",nic!~'isatap.*|VPN.*'}*8))*100",
@@ -3152,7 +3152,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+        "uid": "${datasource}"
       },
       "description": "网络丢弃/错误数据包",
       "fieldConfig": {
@@ -3235,7 +3235,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "irate(windows_net_packets_received_discarded_total{job=~\"$job\",instance=~\"$instance\", nic!~'isatap.*|VPN.*'}[5m]) + irate(windows_net_packets_received_errors_total{job=~\"$job\",instance=~\"$instance\"}[5m])",
@@ -3246,7 +3246,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "irate(windows_net_packets_outbound_discarded_total{job=~\"$job\",instance=~\"$instance\", nic!~'isatap.*|VPN.*'}[5m]) + irate(windows_net_packets_outbound_errors_total{job=~\"$job\",instance=~\"$instance\"}[5m])",
@@ -3263,7 +3263,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+        "uid": "${datasource}"
       },
       "description": "系统线程",
       "fieldConfig": {
@@ -3346,7 +3346,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "windows_system_threads{job=~\"$job\",instance=~\"$instance\"}",
@@ -3361,7 +3361,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+        "uid": "${datasource}"
       },
       "description": "系统异常分派",
       "fieldConfig": {
@@ -3444,7 +3444,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "cf203988-218c-4e99-9a0e-63766ab385fe"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "irate(windows_system_exception_dispatches_total{job=~\"$job\",instance=~\"$instance\"}[5m])",
@@ -3469,7 +3469,7 @@
       {
         "current": {
           "text": "Prometheus",
-          "value": "cf203988-218c-4e99-9a0e-63766ab385fe"
+          "value": "${datasource}"
         },
         "label": "数据源",
         "name": "datasource",
