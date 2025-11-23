@@ -5639,47 +5639,41 @@
   "schemaVersion": 41,
   "tags": [
     "Prometheus",
-    "node_exporter",
-    "StarsL.cn",
-    "TenSunS"
+    "node_exporter"
   ],
   "templating": {
     "list": [
       {
         "current": {
-          "selected": false,
           "text": "default",
           "value": "default"
         },
-        "hide": 0,
         "includeAll": false,
         "label": "数据源",
-        "multi": false,
         "name": "datasource",
         "options": [],
         "query": "prometheus",
         "refresh": 1,
         "regex": "",
-        "skipUrlSync": false,
         "type": "datasource"
       },
       {
         "current": {
-          "text": "vm-node-exporter",
-          "value": "vm-node-exporter"
+          "text": "vm-linux",
+          "value": "vm-linux"
         },
         "datasource": {
           "type": "prometheus",
           "uid": "${datasource}"
         },
-        "definition": "label_values(node_uname_info{job=\"vm-node-exporter\"},job)",
+        "definition": "label_values(node_uname_info,job)",
         "includeAll": false,
         "label": "JOB",
         "name": "job",
         "options": [],
         "query": {
           "qryType": 1,
-          "query": "label_values(node_uname_info{job=\"vm-node-exporter\"},job)",
+          "query": "label_values(node_uname_info,job)",
           "refId": "PrometheusVariableQueryEditor-VariableQuery"
         },
         "refresh": 2,
@@ -5696,14 +5690,14 @@
           "type": "prometheus",
           "uid": "${datasource}"
         },
-        "definition": "label_values(node_uname_info{job=\"vm-node-exporter\"},nodename)",
+        "definition": "label_values(node_uname_info{job=~\"$job\"},nodename)",
         "includeAll": true,
         "label": "名称",
         "name": "name",
         "options": [],
         "query": {
           "qryType": 1,
-          "query": "label_values(node_uname_info{job=\"vm-node-exporter\"},nodename)",
+          "query": "label_values(node_uname_info{job=~\"$job\"},nodename)",
           "refId": "PrometheusVariableQueryEditor-VariableQuery"
         },
         "refresh": 2,
@@ -5720,14 +5714,14 @@
           "type": "prometheus",
           "uid": "${datasource}"
         },
-        "definition": "label_values(node_uname_info{job=\"vm-node-exporter\"},instance)",
+        "definition": "label_values(node_uname_info{job=~\"$job\"},instance)",
         "includeAll": false,
         "label": "IP",
         "name": "instance",
         "options": [],
         "query": {
           "qryType": 1,
-          "query": "label_values(node_uname_info{job=\"vm-node-exporter\"},instance)",
+          "query": "label_values(node_uname_info{job=~\"$job\"},instance)",
           "refId": "PrometheusVariableQueryEditor-VariableQuery"
         },
         "refresh": 2,
@@ -5759,8 +5753,8 @@
       },
       {
         "current": {
-          "text": "1",
-          "value": "1"
+          "text": "4",
+          "value": "4"
         },
         "datasource": {
           "type": "prometheus",
@@ -5784,9 +5778,7 @@
       {
         "current": {
           "text": "All",
-          "value": [
-            "$__all"
-          ]
+          "value": "$__all"
         },
         "datasource": {
           "type": "prometheus",
@@ -5841,7 +5833,7 @@
           "type": "prometheus",
           "uid": "${datasource}"
         },
-        "definition": "label_values(node_uname_info{job=\"vm-node-exporter\", nodename=~\"$name\", instance=~\"$instance\"},nodename)",
+        "definition": "label_values(node_uname_info{job=~\"$job\", nodename=~\"$name\", instance=~\"$instance\"},nodename)",
         "hide": 2,
         "includeAll": false,
         "label": "展示使用的名称",
@@ -5849,14 +5841,14 @@
         "options": [],
         "query": {
           "qryType": 1,
-          "query": "label_values(node_uname_info{job=\"vm-node-exporter\", nodename=~\"$name\", instance=~\"$instance\"},nodename)",
+          "query": "label_values(node_uname_info{job=~\"$job\", nodename=~\"$name\", instance=~\"$instance\"},nodename)",
           "refId": "PrometheusVariableQueryEditor-VariableQuery"
         },
         "refresh": 2,
         "regex": "",
         "sort": 5,
         "type": "query"
-      }  
+      }
     ]
   },
   "time": {
@@ -5874,7 +5866,7 @@
     ]
   },
   "timezone": "browser",
-  "title": "Node Exporter Dashboard 20251114 CN",
+  "title": "Linux Exporter Dashboard (Openshift)",
   "uid": "StarsL-JOB-node",
-  "version": 1
+  "version": 7
 }
